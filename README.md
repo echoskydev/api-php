@@ -3,7 +3,7 @@ API by PHP
 
 Database
 ---
-
+```
  CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) NOT NULL,
@@ -14,8 +14,6 @@ Database
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 
-
-```
 INSERT INTO `categories` (`id`, `name`, `description`, `created`, `modified`) VALUES
 (1, 'Fashion', 'Category for anything related to fashion.', '2014-06-01 00:35:07', '2014-05-30 17:34:33'),
 (2, 'Electronics', 'Gadgets, drones and more.', '2014-06-01 00:35:07', '2014-05-30 17:34:33'),
@@ -54,3 +52,11 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `cr
 (42, 'Nike Shoes for Men', 'Nike Shoes', '12999', 3, '2015-12-12 06:47:08', '2015-12-12 05:47:08'),
 (48, 'Bristol Shoes', 'Awesome shoes.', '999', 5, '2016-01-08 06:36:37', '2016-01-08 05:36:37'),
 (60, 'Rolex Watch', 'Luxury watch.', '25000', 1, '2016-01-11 15:46:02', '2016-01-11 14:46:02');
+
+```
+
+Test
+---
+```
+http://localhost/api-php/product/read.php
+```
